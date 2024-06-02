@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex border-2 border-black h-screen gradient-bg gradients-container"
+    class="flex flex-col space-y-28 h-screen gradient-bg gradients-container border-4 border-red-500"
   >
     <svg xmlns="http://www.w3.org/2000/svg">
       <defs>
@@ -16,29 +16,23 @@
         </filter>
       </defs>
     </svg>
-    <!-- First Div -->
-    <div class="border-2 h-screen grow-[0.5] border-rose-500 middle">1</div>
-    <!-- Middle Div -->
-    <div class="border-2 h-screen grow-[2] border-indigo-500">
-      <div class="border-2 border-green-500 m-4 h-48">
-        <div class="flex justify-center">
-          <div class="m-2 grow h-20 border-2 border-black-500 middle">1</div>
-          <div class="m-2 grow h-20 border-2 border-gray-500 middle">2</div>
-          <div class="m-2 grow h-20 border-2 border-orange-500 middle">3</div>
-        </div>
-        <div class="flex">
-          <div class="mx-2 grow h-20 border-2 border-orange-500 middle">4</div>
-        </div>
-      </div>
-    </div>
-    <!-- Last Div -->
-    <div class="border-2 h-screen grow-[0.5] border-blue-500 middle">3</div>
     <div class="g1"></div>
     <div class="g2"></div>
     <div class="g3"></div>
     <div class="g4"></div>
     <div class="g5"></div>
     <div class="interactive"></div>
+    <div class="size-64 p-4 text-center">
+      <h1 class="text-3xl font-azeret font-bold pt-4">I Am</h1>
+      <h1
+        class="text-5xl font-della font-extrabold text-red-300 mt-8 leading-normal"
+      >
+        Angelo Gabriel
+      </h1>
+    </div>
+    <div class="size-64 ml-40">
+      <img src="/img/Me.png" alt="Gelo" />
+    </div>
   </div>
 </template>
 
@@ -71,15 +65,6 @@ onMounted(() => {
 </script>
 
 <style>
-/* .parent {
-  height: 300px;
-  width: 300px;
-} */
-.middle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 :root {
   --color-bg1: rgb(108, 0, 162);
   --color-bg2: rgb(0, 17, 82);

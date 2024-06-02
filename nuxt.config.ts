@@ -1,5 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts"],
+  googleFonts: {
+    families: {
+      Oswald: {
+        wght: [300, 400, 500, 600, 700],
+      },
+      "Jacquard 12": {
+        wght: [300, 400, 500, 600, 700],
+      },
+      "Azeret Mono": {
+        wght: [300, 400, 500, 600, 700],
+      },
+      "Della Respira": {
+        wght: [300, 400, 500, 600, 700],
+      },
+    },
+  },
   devtools: { enabled: false },
 });

@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: [require("daisyui")],
   theme: {
     screens: {
       sm: "640px",
@@ -12,6 +13,14 @@ module.exports = {
 
       xl: "1280px",
       // => @media (min-width: 1280px) { ... }
+    },
+    extend: {
+      fontFamily: {
+        oswald: ["Oswald", "sans-serif"],
+        jacquard: ["Jacquard 12", "sans-serif"],
+        azeret: ["Azeret Mono", "sans-serif"],
+        della: ["Della Respira", "sans-serif"],
+      },
     },
   },
 };
