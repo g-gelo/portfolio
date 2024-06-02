@@ -36,10 +36,50 @@
         >
           Angelo Gabriel
         </h1>
+        <div class="flex space-between gap-4 ml-10 mt-2">
+          <NuxtLink
+            to="https://www.facebook.com/angelo.evangelista.148/"
+            class="size-9 bg-black middle rounded-full z-40"
+            target="_blank"
+            ><img src="/icons/facebook.svg" alt="Facebook"
+          /></NuxtLink>
+          <NuxtLink
+            to="https://www.instagram.com/evang81194/"
+            target="_blank"
+            class="flex-none size-9 bg-black middle rounded-full z-40"
+            ><img src="/icons/instagram.svg" alt="Instagram"
+          /></NuxtLink>
+          <NuxtLink
+            to="https://www.linkedin.com/in/angelo-gabriel-evangelista-a6276222a/"
+            target="_blank"
+            class="size-9 bg-black middle rounded-full z-40"
+            ><img src="/icons/linkedin.svg" alt="LinkedIn"
+          /></NuxtLink>
+          <NuxtLink
+            to="https://github.com/g-gelo"
+            target="_blank"
+            class="size-9 bg-black middle rounded-full z-40"
+            ><img src="/icons/github.svg" alt="Github"
+          /></NuxtLink>
+        </div>
       </div>
+
       <div class="size-64 ml-40">
         <img src="/img/Me.png" alt="Gelo" />
       </div>
+    </div>
+    <div class="h-screen flex flex-col justify-start items-center p-4">
+      <div class="flex flex-col justify-center items-center mt-20 md:mt-16">
+        <h1 class="text-2xl md:text-4xl font-extrabold text-center">
+          "CHASE YOUR PASSION
+        </h1>
+        <h1
+          class="text-2xl md:text-4xl font-extrabold text-center text-[#260b9caf]"
+        >
+          IN YOUR OWN FASHION"
+        </h1>
+      </div>
+      <div></div>
     </div>
   </div>
 </template>
@@ -73,6 +113,11 @@ onMounted(() => {
 </script>
 
 <style>
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 :root {
   --color-bg1: rgb(108, 0, 162);
   --color-bg2: rgb(0, 17, 82);
