@@ -1,37 +1,45 @@
 <template>
-  <div
-    class="flex flex-col space-y-28 h-screen gradient-bg gradients-container border-4 border-red-500"
-  >
-    <svg xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <filter id="goo">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-          <feColorMatrix
-            in="blur"
-            mode="matrix"
-            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-            result="goo"
-          />
-          <feBlend in="SourceGraphic" in2="goo" />
-        </filter>
-      </defs>
-    </svg>
-    <div class="g1"></div>
-    <div class="g2"></div>
-    <div class="g3"></div>
-    <div class="g4"></div>
-    <div class="g5"></div>
-    <div class="interactive"></div>
-    <div class="size-64 p-4 text-center">
-      <h1 class="text-3xl font-azeret font-bold pt-4">I Am</h1>
-      <h1
-        class="text-5xl font-della font-extrabold text-red-300 mt-8 leading-normal"
-      >
-        Angelo Gabriel
-      </h1>
-    </div>
-    <div class="size-64 ml-40">
-      <img src="/img/Me.png" alt="Gelo" />
+  <div>
+    <div
+      class="flex flex-col space-y-28 h-screen gradient-bg gradients-container border-4 border-red-500"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur
+              in="SourceGraphic"
+              stdDeviation="10"
+              result="blur"
+            />
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+              result="goo"
+            />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+      <div class="g1"></div>
+      <div class="g2"></div>
+      <div class="g3"></div>
+      <div class="g4"></div>
+      <div class="g5"></div>
+      <div class="interactive"></div>
+      <div class="size-64 p-4 text-center">
+        <h1 class="text-3xl font-azeret font-bold text-gray-300 pt-4 pr-12">
+          I Am
+        </h1>
+        <h1
+          class="text-5xl font-della font-extrabold text-red-500 mt-8 leading-normal"
+        >
+          Angelo Gabriel
+        </h1>
+      </div>
+      <div class="size-64 ml-40">
+        <img src="/img/Me.png" alt="Gelo" />
+      </div>
     </div>
   </div>
 </template>
