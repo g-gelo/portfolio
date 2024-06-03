@@ -68,9 +68,11 @@
         <img src="/img/Me.png" alt="Gelo" />
       </div>
     </div>
-    <div class="h-screen flex flex-col justify-start items-center p-4">
-      <div class="flex flex-col justify-center items-center mt-20 md:mt-16">
-        <h1 class="text-2xl md:text-4xl font-extrabold text-center">
+    <div class="h-auto md:h-auto flex flex-col p-4 bg-[#f5eeed]">
+      <div class="flex flex-col justify-center items-center mt-20 sm:mb-24">
+        <h1
+          class="text-2xl md:text-4xl font-extrabold text-center text-[#000000af]"
+        >
           "CHASE YOUR PASSION
         </h1>
         <h1
@@ -79,7 +81,31 @@
           IN YOUR OWN FASHION"
         </h1>
       </div>
-      <div></div>
+      <div
+        class="flex flex-col space-y-10 sm:flex-row sm:space-y-0 sm:space-x-10"
+      >
+        <TheCard
+          iconPath="/icons/book.svg"
+          title="Reading"
+          description="Medium offers diverse articles, from motivation to programming insights, enriching my reading experience."
+          link="https://medium.com/tag/node-js-development"
+          buttonText="View Link"
+        />
+        <TheCard
+          iconPath="/icons/music.svg"
+          title="Music"
+          description="I love listening to music. I don't have a specific genre that I prefer; the only music genre that I hate is the music that I don't listen to."
+          link="https://medium.com/tag/node-js-development"
+          buttonText="View Link"
+        />
+        <TheCard
+          iconPath="/icons/writing.svg"
+          title="Writing"
+          description="Writing down my thoughts process, especially in the morning, helps me stay on track and achieve my goals."
+          link="https://medium.com/tag/node-js-development"
+          buttonText="View Link"
+        />
+      </div>
     </div>
   </div>
 </template>
