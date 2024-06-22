@@ -68,8 +68,11 @@
         <img src="/img/Me.png" alt="Gelo" />
       </div>
     </div>
+    <!-- What I Do -->
     <div class="h-auto md:h-auto flex flex-col p-4 bg-[#f5eeed]">
-      <div class="flex flex-col justify-center items-center mt-20 sm:mb-24">
+      <div
+        class="flex flex-col justify-center items-center mt-20 mb-10 sm:mb-24 sm:mt-20"
+      >
         <h1
           class="text-2xl md:text-4xl font-extrabold text-center text-[#000000af]"
         >
@@ -82,7 +85,7 @@
         </h1>
       </div>
       <div
-        class="flex flex-col space-y-10 sm:flex-row sm:space-y-0 sm:space-x-10"
+        class="flex flex-col space-y-10 sm:flex-row sm:space-y-0 sm:space-x-10 mb-10"
       >
         <TheCard
           iconPath="/icons/book.svg"
@@ -105,6 +108,17 @@
           link="https://medium.com/tag/node-js-development"
           buttonText="View Link"
         />
+      </div>
+    </div>
+    <!-- About Me -->
+    <div class="h-auto flex flex-col p-4 bg-[#4e2edfaf]">
+      <div class="flex justify-center items-center mt-10">
+        <img src="/img/picq.png" alt="Gelo" class="size-80" />
+      </div>
+      <div
+        class="flex justify-center items-center mt-10 mb-10 sm:mb-24 sm:mt-20"
+      >
+        <AboutMe />
       </div>
     </div>
   </div>
