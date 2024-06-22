@@ -7,9 +7,6 @@
       </div>
     </div>
     <div class="middle flex-col">
-      <div class="mt-10">
-        <img src="/skills/skills.png" class="size-80" />
-      </div>
       <h1 class="font-semibold text-3xl font-azeret text-white">EXPERTISE</h1>
       <div class="flex p-6">
         <div>
@@ -33,7 +30,7 @@
         <h1 class="font-semibold text-3xl font-azeret text-white m-4">
           OTHERS
         </h1>
-        <div class="flex flex-wrap gap-4 middle m-4">
+        <div class="flex flex-wrap gap-4 middle m-4 mb-10">
           <div>
             <img src="/skills/react.svg" class="size-20 middle" alt="react" />
             <span class="middle text-white">React</span>

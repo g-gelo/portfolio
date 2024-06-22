@@ -5,10 +5,10 @@
     >
       <div class="font-azeret">
         <NuxtLink to="/"
-          ><img class="h-12 w-auto" src="/logo/logo.png" alt="Logo"
+          ><img class="h-20 w-auto ml-5" src="/logo/logo.png" alt="Logo"
         /></NuxtLink>
       </div>
-      <label class="btn btn-circle swap swap-rotate">
+      <label class="btn btn-circle swap swap-rotate mr-2">
         <input
           type="checkbox"
           class="hidden"
@@ -74,6 +74,44 @@
     <div>
       <slot />
     </div>
+    <footer class="footer footer-center p-10 bg-primary text-primary-content">
+      <aside>
+        <img class="h-20 w-auto" src="/logo/logo.png" alt="Logo" />
+        <p class="font-bold">
+          Angelo Gabriel D. Evangelista <br />
+          Created By mEh 💘
+        </p>
+        <p>Copyright © 2024 - All right reserved</p>
+      </aside>
+      <nav>
+        <div class="flex space-between gap-4">
+          <NuxtLink
+            to="https://www.facebook.com/angelo.evangelista.148/"
+            class="size-9 bg-black middle rounded-full z-40"
+            target="_blank"
+            ><img src="/icons/facebook.svg" alt="Facebook"
+          /></NuxtLink>
+          <NuxtLink
+            to="https://www.instagram.com/evang81194/"
+            target="_blank"
+            class="flex-none size-9 bg-black middle rounded-full z-40"
+            ><img src="/icons/instagram.svg" alt="Instagram"
+          /></NuxtLink>
+          <NuxtLink
+            to="https://www.linkedin.com/in/angelo-gabriel-evangelista-a6276222a/"
+            target="_blank"
+            class="size-9 bg-black middle rounded-full z-40"
+            ><img src="/icons/linkedin.svg" alt="LinkedIn"
+          /></NuxtLink>
+          <NuxtLink
+            to="https://github.com/g-gelo"
+            target="_blank"
+            class="size-9 bg-black middle rounded-full z-40"
+            ><img src="/icons/github.svg" alt="Github"
+          /></NuxtLink>
+        </div>
+      </nav>
+    </footer>
   </div>
 </template>
 
