@@ -72,14 +72,25 @@
       </label>
     </header>
     <div>
-      <slot />
+      <div
+        v-if="isDesktopView"
+        class="under-construction-message h-screen flex justify-center items-center"
+      >
+        <p>
+          This desktop view is still under construction. Please check back
+          later.
+        </p>
+      </div>
+      <div v-else>
+        <slot />
+      </div>
     </div>
     <footer class="footer footer-center p-10 bg-primary text-primary-content">
       <aside>
         <img class="h-20 w-auto" src="/logo/logo.png" alt="Logo" />
         <p class="font-bold">
           Angelo Gabriel D. Evangelista <br />
-          Created By mEh 💘
+          Created By Me 💘
         </p>
         <p>Copyright © 2024 - All right reserved</p>
       </aside>
@@ -114,6 +125,23 @@
     </footer>
   </div>
 </template>
+
+<script setup>
+const isDesktopView = ref(false);
+
+const checkScreenSize = () => {
+  isDesktopView.value = window.innerWidth >= 1024;
+};
+
+onMounted(() => {
+  checkScreenSize();
+  window.addEventListener("resize", checkScreenSize);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("resize", checkScreenSize);
+});
+</script>
 
 <style>
 .backdrop-filter {
