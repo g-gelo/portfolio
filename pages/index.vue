@@ -122,7 +122,9 @@
       </div>
     </div>
     <!-- Sample Project -->
-    <div class="h-screen mt-14 flex flex-col justify-center items-center">
+    <div
+      class="h-screen flex flex-col justify-center items-center bg-[#f5eeed]"
+    >
       <div class="font-bold text-4xl font-azeret">
         <h1>SAMPLE</h1>
         <h1 class="text-[#260b9caf]">PROJECT</h1>
@@ -136,6 +138,10 @@
         <p class="text-gray-600 text-lg">Under Construction</p>
       </div>
       <p class="text-gray-600">Will put content once the Portfolio is done</p>
+    </div>
+    <!-- Skills Overview -->
+    <div class="bg-[#260b9caf]">
+      <SkillUsed />
     </div>
   </div>
 </template>
