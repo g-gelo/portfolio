@@ -111,7 +111,7 @@
       </div>
     </div>
     <!-- About Me -->
-    <div class="h-auto flex flex-col p-4 bg-[#4e2edfaf]">
+    <div class="h-auto flex flex-col p-4 bg-[#260b9caf]">
       <div class="flex justify-center items-center mt-10">
         <img src="/img/picq.png" alt="Gelo" class="size-80" />
       </div>
@@ -120,6 +120,22 @@
       >
         <AboutMe />
       </div>
+    </div>
+    <!-- Sample Project -->
+    <div class="h-screen mt-14 flex flex-col justify-center items-center">
+      <div class="font-bold text-4xl font-azeret">
+        <h1>SAMPLE</h1>
+        <h1 class="text-[#260b9caf]">PROJECT</h1>
+      </div>
+      <div class="mt-4 flex items-center">
+        <img
+          src="/icons/wrench.svg"
+          alt="Under Construction"
+          class="w-8 h-8 mr-2"
+        />
+        <p class="text-gray-600 text-lg">Under Construction</p>
+      </div>
+      <p class="text-gray-600">Will put content once the Portfolio is done</p>
     </div>
   </div>
 </template>
