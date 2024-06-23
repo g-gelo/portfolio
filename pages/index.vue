@@ -118,15 +118,10 @@
       </div>
     </div>
     <!-- About Me -->
-    <div class="h-auto flex flex-col p-4 bg-[#260b9caf]">
-      <div class="flex justify-center items-center mt-10">
-        <img src="/img/picq.png" alt="Gelo" class="size-80" />
-      </div>
-      <div
-        class="flex justify-center items-center mt-10 mb-10 sm:mb-24 sm:mt-20"
-      >
-        <AboutMe />
-      </div>
+    <div
+      class="flex justify-center items-center md:mb-0 md:mt-0 bg-[#260b9caf]"
+    >
+      <AboutMe />
     </div>
     <!-- Sample Project -->
     <div
