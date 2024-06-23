@@ -1,5 +1,8 @@
 module.exports = {
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["system", "light", "dark"],
+  },
   theme: {
     screens: {
       sm: "640px",
