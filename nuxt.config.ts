@@ -32,7 +32,7 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: false },
   colorMode: {
-    preference: "system", // default theme
+    preference: "light", // default theme
     dataValue: "theme", // activate data-theme in <html> tag
     classSuffix: "",
   },

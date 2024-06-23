@@ -1,8 +1,16 @@
 module.exports = {
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["system", "light", "dark"],
+    themes: ["light", "dark"],
   },
+  darkMode: "class", // or 'media' if you prefer using the user's system preference
+  content: [
+    "./components/**/*.{vue,js}",
+    "./layouts/**/*.{vue,js}",
+    "./pages/**/*.{vue,js}",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
+  ],
   theme: {
     screens: {
       sm: "640px",
