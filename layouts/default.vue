@@ -72,16 +72,15 @@
       </label>
     </header>
     <div>
-      <div
-        v-if="isDesktopView"
+      <!-- <div
         class="under-construction-message h-screen flex justify-center items-center"
       >
         <p>
           This desktop view is still under construction. Please check back
           later.
         </p>
-      </div>
-      <div v-else>
+      </div> -->
+      <div>
         <slot />
       </div>
     </div>
@@ -130,7 +129,7 @@
 const isDesktopView = ref(false);
 
 const checkScreenSize = () => {
-  isDesktopView.value = window.innerWidth >= 1024;
+  isDesktopView.value = window.innerWidth >= 1280;
 };
 
 onMounted(() => {

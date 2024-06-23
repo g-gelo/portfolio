@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="flex flex-col space-y-28 h-screen gradient-bg gradients-container border-4 border-red-500"
+      class="flex flex-col md:flex-row h-screen gradient-bg gradients-container"
     >
       <svg xmlns="http://www.w3.org/2000/svg">
         <defs>
@@ -27,16 +27,19 @@
       <div class="g4"></div>
       <div class="g5"></div>
       <div class="interactive"></div>
-      <div class="size-64 p-4 text-center">
-        <h1 class="text-3xl font-azeret font-bold text-gray-300 pt-4 pr-12">
+
+      <div class="flex-1 flex flex-col justify-center p-6 text-left m-14">
+        <h1
+          class="text-4xl font-sacramento font-bold text-gray-300 sm:text-8xl"
+        >
           I Am
         </h1>
         <h1
-          class="text-5xl font-della font-extrabold text-red-500 mt-8 leading-normal"
+          class="text-6xl font-gideon font-extrabold text-white mt-6 tracking-wide sm: text"
         >
           Angelo Gabriel
         </h1>
-        <div class="flex space-between gap-4 ml-10 mt-2">
+        <div class="flex flex-wrap gap-4 mt-6">
           <NuxtLink
             to="https://www.facebook.com/angelo.evangelista.148/"
             class="size-9 bg-black middle rounded-full z-40"
@@ -64,8 +67,14 @@
         </div>
       </div>
 
-      <div class="size-64 ml-40">
-        <img src="/img/Me.png" alt="Gelo" />
+      <div
+        class="relative flex-1 flex items-end justify-end p-4 mb-20 sm:mb-0 md:items-center md:justify-center md:ml-40 md:mt-0"
+      >
+        <img
+          src="/img/Me-2.png"
+          alt="Gelo"
+          class="size-9/12 object-contain md:w-auto md:h-full lg:size-7/12 lg:mt-20"
+        />
       </div>
     </div>
     <!-- What I Do -->
@@ -84,9 +93,7 @@
           IN YOUR OWN FASHION"
         </h1>
       </div>
-      <div
-        class="flex flex-col space-y-10 sm:flex-row sm:space-y-0 sm:space-x-10 mb-10"
-      >
+      <div class="flex flex-col space-y-10 sm:flex-row sm:space-y-0 mb-10">
         <TheCard
           iconPath="/icons/book.svg"
           title="Reading"

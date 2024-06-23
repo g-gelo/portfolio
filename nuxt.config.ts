@@ -15,6 +15,15 @@ export default defineNuxtConfig({
       "Della Respira": {
         wght: [300, 400, 500, 600, 700],
       },
+      Sacramento: {
+        wght: [300, 400, 500, 600, 700],
+      },
+      "Abril Fatface": {
+        wght: [300, 400, 500, 600, 700],
+      },
+      "Gideon Roman": {
+        wght: [300, 400, 500, 600, 700],
+      },
     },
   },
   devtools: { enabled: false },

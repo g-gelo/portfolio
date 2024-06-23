@@ -20,6 +20,8 @@ module.exports = {
         jacquard: ["Jacquard 12", "sans-serif"],
         azeret: ["Azeret Mono", "sans-serif"],
         della: ["Della Respira", "sans-serif"],
+        sacramento: ["Sacramento", "sans-serif"],
+        gideon: ["Gideon Roman", "Abril Fatface"],
       },
     },
   },
