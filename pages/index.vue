@@ -124,23 +124,18 @@
       <AboutMe />
     </div>
     <!-- Sample Project -->
-    <div
-      class="h-screen flex flex-col justify-center items-center bg-[#f5eeed]"
-    >
-      <div class="font-bold text-4xl font-azeret">
-        <h1>SAMPLE</h1>
+    <div class="h-auto bg-[#f5eeed] flex justify-center flex-col items-center">
+      <div
+        class="font-bold text-4xl font-azeret flex flex-col items-center mb-8 mt-10"
+      >
+        <h1 class="text-center">SAMPLE</h1>
         <h1 class="text-[#260b9caf]">PROJECT</h1>
       </div>
-      <div class="mt-4 flex items-center">
-        <img
-          src="/icons/wrench.svg"
-          alt="Under Construction"
-          class="w-8 h-8 mr-2"
-        />
-        <p class="text-gray-600 text-lg">Under Construction</p>
+      <div class="mb-10">
+        <ProjectSample />
       </div>
-      <p class="text-gray-600">Will put content once the Portfolio is done</p>
     </div>
+
     <!-- Skills Overview -->
     <div class="bg-[#260b9caf]">
       <SkillUsed />

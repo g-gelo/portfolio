@@ -14,8 +14,12 @@
           <span class="middle text-white">HTML</span>
         </div>
         <div>
-          <img src="/skills/css.svg" class="size-20 middle" alt="css" />
-          <span class="middle text-white">CSS</span>
+          <img
+            src="/skills/tailwind.svg"
+            class="size-20 middle"
+            alt="tailwind"
+          />
+          <span class="middle text-white">Tailwind</span>
         </div>
         <div>
           <img src="/skills/vue.svg" class="size-20 middle" alt="vue 3" />
@@ -27,9 +31,7 @@
         </div>
       </div>
       <div class="middle flex-col">
-        <h1
-          class="font-semibold text-3xl font-azeret text-white m-4 font-gideon"
-        >
+        <h1 class="font-semibold text-3xl text-white m-4 font-gideon">
           OTHERS
         </h1>
         <div class="flex flex-wrap gap-4 middle m-4 mb-10">
@@ -62,12 +64,8 @@
             <span class="middle text-white">MySQL</span>
           </div>
           <div>
-            <img
-              src="/skills/tailwind.svg"
-              class="size-20 middle"
-              alt="tailwind"
-            />
-            <span class="middle text-white">Tailwind</span>
+            <img src="/skills/css.svg" class="size-20 middle" alt="css" />
+            <span class="middle text-white">CSS</span>
           </div>
           <div>
             <img
