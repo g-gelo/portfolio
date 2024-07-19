@@ -11,13 +11,23 @@
 
       <div class="flex items-center">
         <!-- Navigation links for larger screens -->
-        <div class="hidden lg:flex text-white gap-4 font-azeret">
-          <NuxtLink to="#hero" class="hover:text-[#260b9caf]"
-            >Services</NuxtLink
+        <div class="hidden lg:flex text-white gap-4 font-azeret items-center">
+          <NuxtLink to="#hero" class="hover:text-[#260b9caf]">Home</NuxtLink>
+          <NuxtLink to="#about-me" class="hover:text-[#260b9caf]"
+            >About</NuxtLink
           >
-          <NuxtLink to="#" class="hover:text-[#260b9caf]">Projects</NuxtLink>
-          <NuxtLink to="#" class="hover:text-[#260b9caf]">About</NuxtLink>
-          <NuxtLink to="#" class="hover:text-[#260b9caf]">Contact</NuxtLink>
+          <NuxtLink to="#projects" class="hover:text-[#260b9caf]"
+            >Projects</NuxtLink
+          >
+          <NuxtLink to="#skills" class="hover:text-[#260b9caf]"
+            >Capability</NuxtLink
+          >
+          <a
+            class="btn bg-[#4e2edfaf] text-white font-azeret ml-4"
+            href="mailto:evangelistaangelo38@gmail.com"
+          >
+            Contact
+          </a>
         </div>
 
         <!-- Theme toggle switch for both large and small screens -->
@@ -42,10 +52,15 @@
                 <nav
                   class="flex flex-col gap-y-4 font-bold text-lg tracking-wide uppercase font-azeret"
                 >
-                  <NuxtLink to="#hero">Services</NuxtLink>
-                  <NuxtLink to="#">Projects</NuxtLink>
-                  <NuxtLink to="#">About</NuxtLink>
-                  <NuxtLink to="#">Contact</NuxtLink>
+                  <NuxtLink to="#hero">Home</NuxtLink>
+                  <NuxtLink to="#about-me" class="hover:text-[#260b9caf]"
+                    >About</NuxtLink
+                  >
+                  <NuxtLink to="#projects">Projects</NuxtLink>
+                  <NuxtLink to="#skills" class="hover:text-[#260b9caf]"
+                    >Capability</NuxtLink
+                  >
+                  <a href="mailto:evangelistaangelo38@gmail.com">Contact</a>
                   <div class="ml-4">
                     <input
                       type="checkbox"
@@ -78,14 +93,6 @@
     </header>
 
     <div>
-      <!-- <div
-        class="under-construction-message h-screen flex justify-center items-center"
-      >
-        <p>
-          This desktop view is still under construction. Please check back
-          later.
-        </p>
-      </div> -->
       <div>
         <slot />
       </div>
@@ -146,6 +153,10 @@ onMounted(() => {
 </script>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
+
 .backdrop-filter {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);

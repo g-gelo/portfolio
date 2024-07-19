@@ -1,6 +1,7 @@
 <template>
   <div>
     <div
+      id="hero"
       class="flex flex-col md:flex-row h-screen gradient-bg gradients-container"
     >
       <svg xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +88,7 @@
       </div>
     </div>
     <!-- What I Do -->
-    <div class="h-auto md:h-auto flex flex-col p-4 bg-[#f5eeed]">
+    <div id="about-me" class="h-auto md:h-auto flex flex-col p-4 bg-[#f5eeed]">
       <div
         class="flex flex-col justify-center items-center mt-20 mb-10 sm:mb-24 sm:mt-20"
       >
@@ -133,7 +134,10 @@
       <AboutMe />
     </div>
     <!-- Sample Project -->
-    <div class="h-auto bg-[#f5eeed] flex justify-center flex-col items-center">
+    <div
+      id="projects"
+      class="h-auto bg-[#f5eeed] flex justify-center flex-col items-center"
+    >
       <div
         class="font-bold text-4xl font-azeret flex flex-col items-center mb-8 mt-10"
       >
@@ -146,13 +150,16 @@
     </div>
 
     <!-- Skills Overview -->
-    <div class="bg-[#260b9caf]">
+    <div id="skills" class="bg-[#260b9caf]">
       <SkillUsed />
     </div>
   </div>
 </template>
 
 <script setup>
+useHead({
+  title: "Angelo's Portfolio",
+});
 onMounted(() => {
   const interBubble = document.querySelector(".interactive");
   let curX = 0;
