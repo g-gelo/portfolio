@@ -65,6 +65,15 @@
             ><img src="/icons/github.svg" alt="Github"
           /></NuxtLink>
         </div>
+        <div class="mt-6 z-40">
+          <a
+            href="/projects/portfolio/Resume.pdf"
+            target="_blank"
+            class="btn bg-[#260b9caf] hover:bg-[#1e086b] text-white font-azeret font-bold py-2 px-4 rounded"
+          >
+            Download Resume
+          </a>
+        </div>
       </div>
 
       <div
