@@ -68,7 +68,7 @@
           <a
             href="/projects/portfolio/Resume.pdf"
             target="_blank"
-            class="btn bg-[#260b9caf] hover:bg-[#1e086b] text-white font-azeret font-bold py-2 px-4 rounded"
+            class="btn bg-[#260b9caf] hover:bg-[#1e086b] text-white font-bold py-2 px-4 rounded"
           >
             Download Resume
           </a>
@@ -137,7 +137,7 @@
       class="h-auto bg-[#f5eeed] flex justify-center flex-col items-center"
     >
       <div class="font-bold text-4xl flex flex-col items-center mb-8 mt-10">
-        <h1 class="text-center">SAMPLE</h1>
+        <h1 class="text-center text-[#000000af]">SAMPLE</h1>
         <h1 class="text-[#260b9caf]">PROJECT</h1>
       </div>
       <div class="mb-10">
@@ -148,6 +148,19 @@
     <!-- Skills Overview -->
     <div id="skills" class="bg-[#260b9caf]">
       <SkillUsed />
+    </div>
+
+    <!-- Testimonial -->
+    <div class="max-w-5xl mx-auto my-12 p-6 bg-gray-100 rounded-lg shadow-lg">
+      <h2 class="text-4xl font-bold text-center text-[#260b9caf] mb-6">
+        TESTIMONIALS
+      </h2>
+      <p class="text-center text-gray-600 mb-8">
+        See what my classmates and professors have to say about my work!
+      </p>
+      <div>
+        <TheTestimonial />
+      </div>
     </div>
   </div>
 </template>

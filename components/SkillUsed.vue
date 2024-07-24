@@ -1,13 +1,13 @@
 <template>
   <div class="h-auto">
-    <div class="text-4xl text-white font-bold middle font-azeret">
+    <div class="text-4xl text-white font-bold middle">
       <div class="mt-16 flex gap-2 mb-6">
         <h1>TECH</h1>
         <h1>STACK</h1>
       </div>
     </div>
     <div class="middle flex-col">
-      <h1 class="font-semibold text-3xl font-gideon text-white">EXPERTISE</h1>
+      <h1 class="font-bold text-3xl text-white">EXPERTISE</h1>
       <div class="flex p-6">
         <div>
           <img src="/skills/html.svg" class="size-20 middle" alt="html" />
@@ -31,9 +31,7 @@
         </div>
       </div>
       <div class="middle flex-col">
-        <h1 class="font-semibold text-3xl text-white m-4 font-gideon">
-          OTHERS
-        </h1>
+        <h1 class="font-bold text-3xl text-white m-4">OTHERS</h1>
         <div class="flex flex-wrap gap-4 middle m-4 mb-10">
           <div>
             <img src="/skills/react.svg" class="size-20 middle" alt="react" />

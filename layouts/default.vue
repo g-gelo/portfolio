@@ -3,7 +3,7 @@
     <header
       class="flex justify-between items-center p-4 bg-[#260b9caf] sticky top-0 backdrop-filter z-50"
     >
-      <div class="font-azeret">
+      <div>
         <NuxtLink to="/">
           <img class="h-20 w-auto ml-5" src="/logo/logo.png" alt="Logo" />
         </NuxtLink>
@@ -11,7 +11,7 @@
 
       <div class="flex items-center">
         <!-- Navigation links for larger screens -->
-        <div class="hidden lg:flex text-white gap-4 font-azeret items-center">
+        <div class="hidden lg:flex text-white gap-4 font-bold items-center">
           <NuxtLink to="#hero" class="hover:text-[#260b9caf]">Home</NuxtLink>
           <NuxtLink to="#about-me" class="hover:text-[#260b9caf]"
             >About</NuxtLink
@@ -31,14 +31,14 @@
           </a>
         </div>
 
-        <!-- Theme toggle switch for both large and small screens -->
+        <!-- Theme toggle switch for both large and small screens
         <div class="ml-4 hidden lg:block lg:middle">
           <input
             type="checkbox"
             v-model="isDarkTheme"
             class="toggle theme-controller bg-amber-300 border-sky-400 [--tglbg:theme(colors.sky.500)] checked:bg-blue-300 checked:border-blue-800 checked:[--tglbg:theme(colors.blue.900)]"
           />
-        </div>
+        </div> -->
 
         <!-- Navigation links and theme toggle switch for smaller screens -->
         <div class="lg:hidden ml-4">
@@ -51,7 +51,7 @@
             <dialog id="my_modal_2" class="modal">
               <div class="modal-box">
                 <nav
-                  class="flex flex-col gap-y-4 font-bold text-lg tracking-wide uppercase font-gideon"
+                  class="flex flex-col gap-y-4 font-bold text-lg tracking-wide uppercase"
                 >
                   <NuxtLink to="#hero">Home</NuxtLink>
                   <NuxtLink to="#about-me" class="hover:text-[#260b9caf]"
@@ -62,13 +62,13 @@
                     >Capability</NuxtLink
                   >
                   <a href="mailto:evangelistaangelo38@gmail.com">Contact</a>
-                  <div class="ml-4">
+                  <!-- <div class="ml-4">
                     <input
                       type="checkbox"
                       v-model="isDarkTheme"
                       class="toggle theme-controller bg-amber-300 border-sky-400 [--tglbg:theme(colors.sky.500)] checked:bg-blue-300 checked:border-blue-800 checked:[--tglbg:theme(colors.blue.900)]"
                     />
-                  </div>
+                  </div> -->
                 </nav>
               </div>
               <form method="dialog" class="modal-backdrop">
@@ -98,7 +98,9 @@
         <slot />
       </div>
     </div>
-    <footer class="footer footer-center p-10 bg-primary text-primary-content">
+    <footer
+      class="footer footer-center p-10 bg-[#260b9caf] text-primary-content"
+    >
       <aside>
         <img class="h-20 w-auto" src="/logo/logo.png" alt="Logo" />
         <p class="font-bold">
@@ -140,17 +142,17 @@
 </template>
 
 <script setup>
-const isDarkTheme = ref(false);
+// const isDarkTheme = ref(false);
 
-watch(isDarkTheme, (newTheme) => {
-  const theme = newTheme ? "dark" : "light";
-  document.documentElement.setAttribute("data-theme", theme);
-});
+// watch(isDarkTheme, (newTheme) => {
+//   const theme = newTheme ? "dark" : "light";
+//   document.documentElement.setAttribute("data-theme", theme);
+// });
 
-onMounted(() => {
-  const initialTheme = isDarkTheme.value ? "dark" : "light";
-  document.documentElement.setAttribute("data-theme", initialTheme);
-});
+// onMounted(() => {
+//   const initialTheme = isDarkTheme.value ? "dark" : "light";
+//   document.documentElement.setAttribute("data-theme", initialTheme);
+// });
 </script>
 
 <style>
