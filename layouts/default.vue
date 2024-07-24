@@ -50,7 +50,7 @@
             <dialog id="my_modal_2" class="modal">
               <div class="modal-box">
                 <nav
-                  class="flex flex-col gap-y-4 font-bold text-lg tracking-wide uppercase font-azeret"
+                  class="flex flex-col gap-y-4 font-bold text-lg tracking-wide uppercase font-gideon"
                 >
                   <NuxtLink to="#hero">Home</NuxtLink>
                   <NuxtLink to="#about-me" class="hover:text-[#260b9caf]"

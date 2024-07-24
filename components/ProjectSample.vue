@@ -26,7 +26,7 @@
         altText="Portfolio Project"
         githubLink="https://github.com/g-gelo/portfolio"
         cardTitle="My Portfolio"
-        description="Responsive, Simple, and Minimal custom theme for my portfolio"
+        description="Responsive, Simple, and Minimal custom theme for my portfolio."
         :badges="['Nuxt 3', 'Tailwind', 'Daisy Ui']"
       />
     </div>

@@ -10,7 +10,7 @@
       >
     </figure>
     <div class="card-body">
-      <h2 class="card-title font-della">
+      <h2 class="card-title font-bold">
         {{ cardTitle }}
       </h2>
       <p class="line-clamp-3 hover:line-clamp-none">

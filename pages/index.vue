@@ -30,9 +30,7 @@
       <div class="interactive"></div>
 
       <div class="flex-1 flex flex-col justify-center p-6 text-left m-14">
-        <h1
-          class="text-4xl font-sacramento font-bold text-gray-300 sm:text-8xl"
-        >
+        <h1 class="text-4xl font-gideon font-bold text-gray-300 sm:text-8xl">
           I Am
         </h1>
         <h1
@@ -138,9 +136,7 @@
       id="projects"
       class="h-auto bg-[#f5eeed] flex justify-center flex-col items-center"
     >
-      <div
-        class="font-bold text-4xl font-azeret flex flex-col items-center mb-8 mt-10"
-      >
+      <div class="font-bold text-4xl flex flex-col items-center mb-8 mt-10">
         <h1 class="text-center">SAMPLE</h1>
         <h1 class="text-[#260b9caf]">PROJECT</h1>
       </div>

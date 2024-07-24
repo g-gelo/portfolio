@@ -9,12 +9,12 @@
       >
         <div class="card-body">
           <h2
-            class="card-title text-4xl justify-center font-azeret text-[#4e2edfaf]"
+            class="card-title font-bold text-4xl justify-center text-[#4e2edfaf]"
           >
             &lt; ABOUT ME /&gt;
           </h2>
           <p
-            class="text-md text-gray-600 pb-2 leading-relaxed font-della max-w-xs sm:max-w-md md:max-w-2xl md:text-xl border-b-2"
+            class="text-md text-gray-600 pb-2 leading-relaxed max-w-xs sm:max-w-md md:max-w-2xl md:text-xl border-b-2"
           >
             Hello! I'm <strong>Angelo Gabriel D. Evangelista</strong>, a
             <strong>fresh graduate front-end developer</strong> based in the
@@ -27,7 +27,7 @@
             &lt; Contact Information /&gt
           </h2>
           <div
-            class="text-md pb-4 text-gray-600 leading-relaxed font-della max-w-xs sm:max-w-md md:max-w-2xl md:text-xl border-b-2 items-center"
+            class="text-md pb-4 text-gray-600 leading-relaxed max-w-xs sm:max-w-md md:max-w-2xl md:text-xl border-b-2 items-center"
           >
             <div class="flex">
               <img
@@ -43,7 +43,7 @@
             </div>
           </div>
           <p
-            class="text-md pb-3 text-center text-gray-600 leading-relaxed font-della max-w-xs sm:max-w-md md:max-w-2xl md:text-xl border-b-2 items-center"
+            class="text-md pb-3 text-center text-gray-600 leading-relaxed max-w-xs sm:max-w-md md:max-w-2xl md:text-xl border-b-2 items-center"
           >
             I'm a recent graduate open to part-time roles and new opportunities.
             Whether you have questions or just want to say hi, feel free to
