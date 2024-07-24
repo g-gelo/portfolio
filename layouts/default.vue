@@ -23,10 +23,11 @@
             >Capability</NuxtLink
           >
           <a
-            class="btn bg-[#4e2edfaf] text-white font-azeret ml-4"
+            class="btn bg-[#4e2edfaf] text-white"
             href="mailto:evangelistaangelo38@gmail.com"
           >
-            Contact
+            Say Hi
+            <img src="/icons/send.svg" alt="Send Icon" class="w-5" />
           </a>
         </div>
 

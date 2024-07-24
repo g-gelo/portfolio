@@ -50,13 +50,13 @@
             reach out—I'm here and ready to connect!
           </p>
 
-          <div class="card-actions justify-end">
+          <div class="card-actions justify-center">
             <a
-              class="btn bg-[#4e2edfaf] text-white font-azeret"
-              href="mailto:evangelistaangelo38@gmail.com"
+              href="#"
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/evangelistaangelo38'});return false;"
+              class="btn bg-[#4e2edfaf] text-white font-bold"
             >
-              Say Hi
-              <img src="/icons/send.svg" alt="Send Icon" class="w-5" />
+              Schedule meeting with me
             </a>
           </div>
         </div>
@@ -66,7 +66,17 @@
 </template>
 
 <script setup>
-// No script logic needed
+onMounted(() => {
+  const link = document.createElement("link");
+  link.href = "https://assets.calendly.com/assets/external/widget.css";
+  link.rel = "stylesheet";
+  document.head.appendChild(link);
+
+  const script = document.createElement("script");
+  script.src = "https://assets.calendly.com/assets/external/widget.js";
+  script.async = true;
+  document.body.appendChild(script);
+});
 </script>
 
 <style scoped>
