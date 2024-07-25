@@ -159,7 +159,7 @@
         TESTIMONIALS
       </h2>
       <p class="text-center text-gray-600 mb-8">
-        See what my classmates and professors have to say about my work!
+        See what others have to say about my work!
       </p>
       <div>
         <TheTestimonial />
