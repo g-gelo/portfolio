@@ -77,6 +77,9 @@
 </template>
 
 <script setup>
+import "animate.css";
+import "intersection-observer";
+
 onMounted(() => {
   if (process.client) {
     const sliders = document.querySelectorAll(".top");

@@ -169,6 +169,9 @@
 </template>
 
 <script setup>
+import "animate.css";
+import "intersection-observer";
+
 useHead({
   title: "Angelo's Portfolio",
 });
