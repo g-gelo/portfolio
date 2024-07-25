@@ -22,6 +22,9 @@
           <NuxtLink to="#skills" class="hover:text-[#260b9caf]"
             >Capability</NuxtLink
           >
+          <NuxtLink to="#testimonials" class="hover:text-[#260b9caf]"
+            >Testimonials</NuxtLink
+          >
           <a
             class="btn bg-[#4e2edfaf] text-white"
             href="mailto:evangelistaangelo38@gmail.com"
@@ -61,7 +64,16 @@
                   <NuxtLink to="#skills" class="hover:text-[#260b9caf]"
                     >Capability</NuxtLink
                   >
-                  <a href="mailto:evangelistaangelo38@gmail.com">Contact</a>
+                  <NuxtLink to="#testimonials" class="hover:text-[#260b9caf]"
+                    >Testimonials</NuxtLink
+                  >
+                  <a
+                    class="btn bg-[#4e2edfaf] text-white"
+                    href="mailto:evangelistaangelo38@gmail.com"
+                  >
+                    Say Hi
+                    <img src="/icons/send.svg" alt="Send Icon" />
+                  </a>
                   <!-- <div class="ml-4">
                     <input
                       type="checkbox"

@@ -88,6 +88,11 @@ const testimonials = ref([
     author: "Vlademir Pagtakhan",
     role: "College Professor and Software Engineer",
   },
+  {
+    text: "Can perform tasks with minimal supervision, punctual, shows initiative in performing tasks. Always willing to learn and quickly adapts to new challenges.",
+    author: "Daniel Angelo Wagwag",
+    role: "IT Staff (My IT Supervisor during Internship",
+  },
 ]);
 
 const currentIndex = ref(0);

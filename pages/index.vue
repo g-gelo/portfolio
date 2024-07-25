@@ -151,7 +151,10 @@
     </div>
 
     <!-- Testimonial -->
-    <div class="max-w-5xl mx-auto my-12 p-6 bg-gray-100 rounded-lg shadow-lg">
+    <div
+      id="testimonials"
+      class="max-w-5xl mx-auto my-12 p-6 bg-gray-100 rounded-lg shadow-lg"
+    >
       <h2 class="text-4xl font-bold text-center text-[#260b9caf] mb-6">
         TESTIMONIALS
       </h2>
