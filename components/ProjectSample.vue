@@ -1,6 +1,6 @@
 <template>
   <div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
-    <div>
+    <div class="top">
       <ProjectCard
         imageSrc="/projects/capstone/capstone-project.png"
         altText="Capstone Thesis Project"
@@ -10,7 +10,7 @@
         :badges="['Vue 3', 'TypeScript', 'JavaScript', 'PWA', 'Nuxt 3']"
       />
     </div>
-    <div>
+    <div class="top">
       <ProjectCard
         imageSrc="/projects/ojt/ojt-project.png"
         altText="OJT Project"
@@ -20,7 +20,7 @@
         :badges="['Vue 3', 'Nuxt 3', 'Prisma']"
       />
     </div>
-    <div>
+    <div class="top">
       <ProjectCard
         imageSrc="/projects/portfolio/portfolio.png"
         altText="Portfolio Project"
@@ -34,7 +34,34 @@
 </template>
 
 <script setup>
-// No script logic needed here as per your provided code
+onMounted(() => {
+  if (process.client) {
+    const sliders = document.querySelectorAll(".top");
+
+    const appearOptions = {
+      threshold: 0, // Adjust the threshold value as needed
+    };
+
+    const appearOnScroll = new IntersectionObserver(
+      (entries, appearOnScroll) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(
+              "animate__animated",
+              "animate__fadeInUp"
+            );
+            appearOnScroll.unobserve(entry.target);
+          }
+        });
+      },
+      appearOptions
+    );
+
+    sliders.forEach((slider) => {
+      appearOnScroll.observe(slider);
+    });
+  }
+});
 </script>
 
 <style scoped>

@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-4xl mx-auto my-10 h-auto bg-[#f5eeed]">
+  <div class="max-w-4xl mx-auto my-10 h-auto bg-[#f5eeed] top">
     <div class="relative overflow-hidden">
       <div
         class="flex transition-transform duration-700 ease-in-out"
@@ -77,6 +77,35 @@
 </template>
 
 <script setup>
+onMounted(() => {
+  if (process.client) {
+    const sliders = document.querySelectorAll(".top");
+
+    const appearOptions = {
+      threshold: 0, // Adjust the threshold value as needed
+    };
+
+    const appearOnScroll = new IntersectionObserver(
+      (entries, appearOnScroll) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(
+              "animate__animated",
+              "animate__fadeInUp"
+            );
+            appearOnScroll.unobserve(entry.target);
+          }
+        });
+      },
+      appearOptions
+    );
+
+    sliders.forEach((slider) => {
+      appearOnScroll.observe(slider);
+    });
+  }
+});
+
 const testimonials = ref([
   {
     text: "As your professor for the capstone thesis project, I have to say you did an impressive job leading the team. You handled everything well, made sure we addressed the client’s needs, and overcame the challenges that came up. That really contributed to the project’s success.",

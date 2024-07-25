@@ -1,11 +1,11 @@
 <template>
   <div class="h-auto md:flex md:my-10 md:gap-4 lg:gap-10 md:m-8">
-    <div class="flex justify-center items-center flex-1 my-10">
+    <div class="flex justify-center items-center flex-1 my-10 left">
       <img src="/img/picq.png" alt="Gelo" class="w-80 md:w-96 lg:w-96" />
     </div>
     <div class="flex-1">
       <div
-        class="card rounded-lg w-fit md:w-full bg-white text-primary-content mb-10 mx-5 sm:mb-10"
+        class="card rounded-lg w-fit md:w-full bg-white text-primary-content mb-10 mx-5 sm:mb-10 right"
       >
         <div class="card-body">
           <h2
@@ -66,6 +66,64 @@
 </template>
 
 <script setup>
+onMounted(() => {
+  if (process.client) {
+    const sliders = document.querySelectorAll(".left");
+
+    const appearOptions = {
+      threshold: 0, // Adjust the threshold value as needed
+    };
+
+    const appearOnScroll = new IntersectionObserver(
+      (entries, appearOnScroll) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(
+              "animate__animated",
+              "animate__fadeInLeft"
+            );
+            appearOnScroll.unobserve(entry.target);
+          }
+        });
+      },
+      appearOptions
+    );
+
+    sliders.forEach((slider) => {
+      appearOnScroll.observe(slider);
+    });
+  }
+});
+
+onMounted(() => {
+  if (process.client) {
+    const sliders = document.querySelectorAll(".right");
+
+    const appearOptions = {
+      threshold: 0, // Adjust the threshold value as needed
+    };
+
+    const appearOnScroll = new IntersectionObserver(
+      (entries, appearOnScroll) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(
+              "animate__animated",
+              "animate__fadeInRight"
+            );
+            appearOnScroll.unobserve(entry.target);
+          }
+        });
+      },
+      appearOptions
+    );
+
+    sliders.forEach((slider) => {
+      appearOnScroll.observe(slider);
+    });
+  }
+});
+
 onMounted(() => {
   const link = document.createElement("link");
   link.href = "https://assets.calendly.com/assets/external/widget.css";

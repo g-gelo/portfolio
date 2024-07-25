@@ -2,13 +2,13 @@
   <div class="h-auto">
     <div class="text-4xl text-white font-bold middle">
       <div class="mt-16 flex gap-2 mb-6">
-        <h1>TECH</h1>
-        <h1>STACK</h1>
+        <h1 class="left">TECH</h1>
+        <h1 class="right">STACK</h1>
       </div>
     </div>
     <div class="middle flex-col">
-      <h1 class="font-bold text-3xl text-white">EXPERTISE</h1>
-      <div class="flex p-6 space-x-6">
+      <h1 class="font-bold text-3xl text-white top">EXPERTISE</h1>
+      <div class="flex p-6 space-x-6 top">
         <NuxtLink to="https://www.w3schools.com/html/" target="_blank">
           <img
             src="/skills/html.svg"
@@ -47,8 +47,8 @@
       </div>
 
       <div class="middle flex-col">
-        <h1 class="font-bold text-3xl text-white m-4">OTHERS</h1>
-        <div class="flex flex-wrap gap-4 middle m-4 mb-10">
+        <h1 class="font-bold text-3xl text-white m-4 top">OTHERS</h1>
+        <div class="flex flex-wrap gap-4 middle m-4 mb-10 top">
           <div>
             <NuxtLink
               to="https://reactjs.org/docs/getting-started.html"
@@ -175,7 +175,92 @@
 </template>
 
 <script setup>
-//
+onMounted(() => {
+  if (process.client) {
+    const sliders = document.querySelectorAll(".left");
+
+    const appearOptions = {
+      threshold: 0, // Adjust the threshold value as needed
+    };
+
+    const appearOnScroll = new IntersectionObserver(
+      (entries, appearOnScroll) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(
+              "animate__animated",
+              "animate__fadeInLeft"
+            );
+            appearOnScroll.unobserve(entry.target);
+          }
+        });
+      },
+      appearOptions
+    );
+
+    sliders.forEach((slider) => {
+      appearOnScroll.observe(slider);
+    });
+  }
+});
+
+onMounted(() => {
+  if (process.client) {
+    const sliders = document.querySelectorAll(".right");
+
+    const appearOptions = {
+      threshold: 0, // Adjust the threshold value as needed
+    };
+
+    const appearOnScroll = new IntersectionObserver(
+      (entries, appearOnScroll) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(
+              "animate__animated",
+              "animate__fadeInRight"
+            );
+            appearOnScroll.unobserve(entry.target);
+          }
+        });
+      },
+      appearOptions
+    );
+
+    sliders.forEach((slider) => {
+      appearOnScroll.observe(slider);
+    });
+  }
+});
+
+onMounted(() => {
+  if (process.client) {
+    const sliders = document.querySelectorAll(".top");
+
+    const appearOptions = {
+      threshold: 0, // Adjust the threshold value as needed
+    };
+
+    const appearOnScroll = new IntersectionObserver(
+      (entries, appearOnScroll) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(
+              "animate__animated",
+              "animate__fadeInUp"
+            );
+            appearOnScroll.unobserve(entry.target);
+          }
+        });
+      },
+      appearOptions
+    );
+
+    sliders.forEach((slider) => {
+      appearOnScroll.observe(slider);
+    });
+  }
+});
 </script>
 
 <style scoped>

@@ -34,33 +34,33 @@
           I Am
         </h1>
         <h1
-          class="text-6xl font-gideon font-extrabold text-white mt-6 tracking-wide sm: text"
+          class="text-6xl font-gideon font-extrabold text-white mt-6 tracking-wide"
         >
           Angelo Gabriel
         </h1>
         <div class="flex flex-wrap gap-4 mt-6">
           <NuxtLink
             to="https://www.facebook.com/angelo.evangelista.148/"
-            class="size-9 bg-black middle rounded-full z-40"
+            class="size-9 bg-black middle rounded-full z-40 hover:animate-spin"
             target="_blank"
             ><img src="/icons/facebook.svg" alt="Facebook"
           /></NuxtLink>
           <NuxtLink
             to="https://www.instagram.com/evang81194/"
             target="_blank"
-            class="flex-none size-9 bg-black middle rounded-full z-40"
+            class="flex-none size-9 bg-black middle rounded-full z-40 hover:animate-spin"
             ><img src="/icons/instagram.svg" alt="Instagram"
           /></NuxtLink>
           <NuxtLink
             to="https://www.linkedin.com/in/angelo-gabriel-evangelista-a6276222a/"
             target="_blank"
-            class="size-9 bg-black middle rounded-full z-40"
+            class="size-9 bg-black middle rounded-full z-40 hover:animate-spin"
             ><img src="/icons/linkedin.svg" alt="LinkedIn"
           /></NuxtLink>
           <NuxtLink
             to="https://github.com/g-gelo"
             target="_blank"
-            class="size-9 bg-black middle rounded-full z-40"
+            class="size-9 bg-black middle rounded-full z-40 hover:animate-spin"
             ><img src="/icons/github.svg" alt="Github"
           /></NuxtLink>
         </div>
@@ -91,17 +91,17 @@
         class="flex flex-col justify-center items-center mt-20 mb-10 sm:mb-24 sm:mt-20"
       >
         <h1
-          class="text-2xl md:text-4xl font-extrabold text-center text-[#000000af]"
+          class="text-2xl md:text-4xl font-extrabold text-center text-[#000000af] left"
         >
           "CHASE YOUR PASSION
         </h1>
         <h1
-          class="text-2xl md:text-4xl font-extrabold text-center text-[#260b9caf]"
+          class="text-2xl md:text-4xl font-extrabold text-center text-[#260b9caf] right"
         >
           IN YOUR OWN FASHION"
         </h1>
       </div>
-      <div class="flex flex-col space-y-10 sm:flex-row sm:space-y-0 mb-10">
+      <div class="flex flex-col space-y-10 sm:flex-row sm:space-y-0 mb-10 top">
         <TheCard
           iconPath="/icons/book.svg"
           title="Reading"
@@ -137,8 +137,8 @@
       class="h-auto bg-[#f5eeed] flex justify-center flex-col items-center"
     >
       <div class="font-bold text-4xl flex flex-col items-center mb-8 mt-10">
-        <h1 class="text-center text-[#000000af]">SAMPLE</h1>
-        <h1 class="text-[#260b9caf]">PROJECT</h1>
+        <h1 class="text-center text-[#000000af] left">SAMPLE</h1>
+        <h1 class="text-[#260b9caf] right">PROJECT</h1>
       </div>
       <div class="mb-10">
         <ProjectSample />
@@ -155,7 +155,7 @@
       id="testimonials"
       class="max-w-5xl mx-auto my-12 p-6 bg-gray-100 rounded-lg shadow-lg"
     >
-      <h2 class="text-4xl font-bold text-center text-[#260b9caf] mb-6">
+      <h2 class="text-4xl font-bold text-center text-[#260b9caf] mb-6 left">
         TESTIMONIALS
       </h2>
       <p class="text-center text-gray-600 mb-8">
@@ -172,6 +172,94 @@
 useHead({
   title: "Angelo's Portfolio",
 });
+
+onMounted(() => {
+  if (process.client) {
+    const sliders = document.querySelectorAll(".left");
+
+    const appearOptions = {
+      threshold: 0, // Adjust the threshold value as needed
+    };
+
+    const appearOnScroll = new IntersectionObserver(
+      (entries, appearOnScroll) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(
+              "animate__animated",
+              "animate__fadeInLeft"
+            );
+            appearOnScroll.unobserve(entry.target);
+          }
+        });
+      },
+      appearOptions
+    );
+
+    sliders.forEach((slider) => {
+      appearOnScroll.observe(slider);
+    });
+  }
+});
+
+onMounted(() => {
+  if (process.client) {
+    const sliders = document.querySelectorAll(".right");
+
+    const appearOptions = {
+      threshold: 0, // Adjust the threshold value as needed
+    };
+
+    const appearOnScroll = new IntersectionObserver(
+      (entries, appearOnScroll) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(
+              "animate__animated",
+              "animate__fadeInRight"
+            );
+            appearOnScroll.unobserve(entry.target);
+          }
+        });
+      },
+      appearOptions
+    );
+
+    sliders.forEach((slider) => {
+      appearOnScroll.observe(slider);
+    });
+  }
+});
+
+onMounted(() => {
+  if (process.client) {
+    const sliders = document.querySelectorAll(".top");
+
+    const appearOptions = {
+      threshold: 0, // Adjust the threshold value as needed
+    };
+
+    const appearOnScroll = new IntersectionObserver(
+      (entries, appearOnScroll) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(
+              "animate__animated",
+              "animate__fadeInUp"
+            );
+            appearOnScroll.unobserve(entry.target);
+          }
+        });
+      },
+      appearOptions
+    );
+
+    sliders.forEach((slider) => {
+      appearOnScroll.observe(slider);
+    });
+  }
+});
+
 onMounted(() => {
   const interBubble = document.querySelector(".interactive");
   let curX = 0;
