@@ -8,86 +8,165 @@
     </div>
     <div class="middle flex-col">
       <h1 class="font-bold text-3xl text-white">EXPERTISE</h1>
-      <div class="flex p-6">
-        <div>
-          <img src="/skills/html.svg" class="size-20 middle" alt="html" />
-          <span class="middle text-white">HTML</span>
-        </div>
-        <div>
+      <div class="flex p-6 space-x-6">
+        <NuxtLink to="https://www.w3schools.com/html/" target="_blank">
+          <img
+            src="/skills/html.svg"
+            class="w-20 h-20 transition transform hover:-translate-y-2 hover:animate-bounce"
+            alt="HTML"
+          />
+          <span class="block text-center text-white">HTML</span>
+        </NuxtLink>
+
+        <NuxtLink to="https://tailwindcss.com" target="_blank">
           <img
             src="/skills/tailwind.svg"
-            class="size-20 middle"
-            alt="tailwind"
+            class="w-20 h-20 transition transform hover:-translate-y-2 hover:animate-bounce"
+            alt="Tailwind"
           />
-          <span class="middle text-white">Tailwind</span>
-        </div>
-        <div>
-          <img src="/skills/vue.svg" class="size-20 middle" alt="vue 3" />
-          <span class="middle text-white">Vue 3</span>
-        </div>
-        <div>
-          <img src="/skills/nuxt.svg" class="size-20 middle" alt="nuxt 3" />
-          <span class="middle text-white">Nuxt 3</span>
-        </div>
+          <span class="block text-center text-white">Tailwind</span>
+        </NuxtLink>
+
+        <NuxtLink to="https://vuejs.org" target="_blank">
+          <img
+            src="/skills/vue.svg"
+            class="w-20 h-20 transition transform hover:-translate-y-2 hover:animate-bounce"
+            alt="Vue 3"
+          />
+          <span class="block text-center text-white">Vue 3</span>
+        </NuxtLink>
+
+        <NuxtLink to="https://nuxt.com" target="_blank">
+          <img
+            src="/skills/nuxt.svg"
+            class="w-20 h-20 transition transform hover:-translate-y-2 hover:animate-bounce"
+            alt="Nuxt 3"
+          />
+          <span class="block text-center text-white">Nuxt 3</span>
+        </NuxtLink>
       </div>
+
       <div class="middle flex-col">
         <h1 class="font-bold text-3xl text-white m-4">OTHERS</h1>
         <div class="flex flex-wrap gap-4 middle m-4 mb-10">
           <div>
-            <img src="/skills/react.svg" class="size-20 middle" alt="react" />
-            <span class="middle text-white">React</span>
+            <NuxtLink
+              to="https://reactjs.org/docs/getting-started.html"
+              target="_blank"
+            >
+              <img
+                src="/skills/react.svg"
+                class="w-20 h-20 transition transform hover:-translate-y-2 hover:animate-bounce"
+                alt="React"
+              />
+              <span class="block text-center text-white">React</span>
+            </NuxtLink>
           </div>
           <div>
-            <img src="/skills/next.svg" class="size-20 middle" alt="next" />
-            <span class="middle text-white">NextJs</span>
+            <NuxtLink to="https://nextjs.org/docs" target="_blank">
+              <img
+                src="/skills/next.svg"
+                class="w-20 h-20 transition transform hover:-translate-y-2 hover:animate-bounce"
+                alt="Next.js"
+              />
+              <span class="block text-center text-white">NextJs</span>
+            </NuxtLink>
           </div>
           <div>
-            <img src="/skills/quasar.svg" class="size-20 middle" alt="quasar" />
-            <span class="middle text-white">Quasar</span>
+            <NuxtLink
+              to="https://quasar.dev/introduction-to-quasar"
+              target="_blank"
+            >
+              <img
+                src="/skills/quasar.svg"
+                class="w-20 h-20 transition transform hover:-translate-y-2 hover:animate-bounce"
+                alt="Quasar"
+              />
+              <span class="block text-center text-white">Quasar</span>
+            </NuxtLink>
           </div>
           <div>
-            <img
-              src="/skills/laravel.svg"
-              class="size-20 middle"
-              alt="laravel"
-            />
-            <span class="middle text-white">Laravel</span>
+            <NuxtLink to="https://laravel.com/docs" target="_blank">
+              <img
+                src="/skills/laravel.svg"
+                class="w-20 h-20 transition transform hover:-translate-y-2 hover:animate-bounce"
+                alt="Laravel"
+              />
+              <span class="block text-center text-white">Laravel</span>
+            </NuxtLink>
           </div>
           <div>
-            <img src="/skills/js.svg" class="size-20 middle" alt="js" />
-            <span class="middle text-white">JavaScript</span>
+            <NuxtLink to="https://www.w3schools.com/js/" target="_blank">
+              <img
+                src="/skills/js.svg"
+                class="w-20 h-20 transition transform hover:-translate-y-2 hover:animate-bounce"
+                alt="JavaScript"
+              />
+              <span class="block text-center text-white">JavaScript</span>
+            </NuxtLink>
           </div>
           <div>
-            <img src="/skills/mysql.svg" class="size-20 middle" alt="mysql" />
-            <span class="middle text-white">MySQL</span>
+            <NuxtLink to="https://dev.mysql.com/doc/" target="_blank">
+              <img
+                src="/skills/mysql.svg"
+                class="w-20 h-20 transition transform hover:-translate-y-2 hover:animate-bounce"
+                alt="MySQL"
+              />
+              <span class="block text-center text-white">MySQL</span>
+            </NuxtLink>
           </div>
           <div>
-            <img src="/skills/css.svg" class="size-20 middle" alt="css" />
-            <span class="middle text-white">CSS</span>
+            <NuxtLink to="https://www.w3schools.com/css/" target="_blank">
+              <img
+                src="/skills/css.svg"
+                class="w-20 h-20 transition transform hover:-translate-y-2 hover:animate-bounce"
+                alt="CSS"
+              />
+              <span class="block text-center text-white">CSS</span>
+            </NuxtLink>
           </div>
           <div>
-            <img
-              src="/skills/vuetify.svg"
-              class="size-20 middle"
-              alt="vuetify"
-            />
-            <span class="middle text-white">Vuetify 3</span>
+            <NuxtLink
+              to="https://vuetifyjs.com/en/getting-started/installation/"
+              target="_blank"
+            >
+              <img
+                src="/skills/vuetify.svg"
+                class="w-20 h-20 transition transform hover:-translate-y-2 hover:animate-bounce"
+                alt="Vuetify"
+              />
+              <span class="block text-center text-white">Vuetify 3</span>
+            </NuxtLink>
           </div>
           <div>
-            <img
-              src="/skills/bootstrap.svg"
-              class="size-20 middle bg-white rounded-lg"
-              alt="bootstrap"
-            />
-            <span class="middle text-white">Bootstrap</span>
+            <NuxtLink to="https://getbootstrap.com/docs/" target="_blank">
+              <img
+                src="/skills/bootstrap.svg"
+                class="w-20 h-20 transition transform hover:-translate-y-2 hover:animate-bounce bg-white rounded-lg"
+                alt="Bootstrap"
+              />
+              <span class="block text-center text-white">Bootstrap</span>
+            </NuxtLink>
           </div>
           <div>
-            <img src="/skills/github.svg" class="size-20 middle" alt="github" />
-            <span class="middle text-white">GitHub</span>
+            <NuxtLink to="https://docs.github.com/en" target="_blank">
+              <img
+                src="/skills/github.svg"
+                class="w-20 h-20 transition transform hover:-translate-y-2 hover:animate-bounce"
+                alt="GitHub"
+              />
+              <span class="block text-center text-white">GitHub</span>
+            </NuxtLink>
           </div>
           <div>
-            <img src="/skills/git.svg" class="size-20 middle" alt="git" />
-            <span class="middle text-white">Git</span>
+            <NuxtLink to="https://git-scm.com/doc" target="_blank">
+              <img
+                src="/skills/git.svg"
+                class="w-20 h-20 transition transform hover:-translate-y-2 hover:animate-bounce"
+                alt="Git"
+              />
+              <span class="block text-center text-white">Git</span>
+            </NuxtLink>
           </div>
         </div>
       </div>
