@@ -66,7 +66,7 @@
         </div>
         <div class="mt-6 z-40">
           <a
-            href="/projects/portfolio/Resume.pdf"
+            href="/projects/portfolio/Resume — Angelo Gabriel D. Evangelista.pdf"
             target="_blank"
             class="btn bg-[#260b9caf] hover:bg-[#1e086b] text-white font-bold py-2 px-4 rounded"
           >
@@ -80,7 +80,7 @@
       >
         <img
           src="/img/Me-2.png"
-          alt="Gelo"
+          alt="Angelo Gabriel D. Evangelista — Front-End Developer/Designer"
           class="size-9/12 object-contain md:w-auto md:h-full lg:size-7/12 lg:mt-20"
         />
       </div>

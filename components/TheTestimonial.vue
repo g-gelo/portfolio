@@ -11,6 +11,12 @@
           class="flex-none w-full p-6"
         >
           <div class="bg-white shadow-md rounded-lg p-6">
+            <img
+              v-if="testimonial.image"
+              :src="testimonial.image"
+              alt="Profile Photo"
+              class="w-48 h-48 mt-3 mx-auto object-cover"
+            />
             <p class="text-lg text-gray-700 mb-4">{{ testimonial.text }}</p>
             <div class="text-right">
               <p class="text-sm font-semibold">{{ testimonial.author }}</p>
@@ -114,16 +120,19 @@ const testimonials = ref([
     text: "As your professor for the capstone thesis project, I have to say you did an impressive job leading the team. You handled everything well, made sure we addressed the client’s needs, and overcame the challenges that came up. That really contributed to the project’s success.",
     author: "John Vincent Dallego",
     role: "College Professor and Software Engineer",
+    image: "/testimonial/testing.JPG",
   },
   {
     text: "In the final project for my class, you did a fantastic job leading the team. Your leadership in programming and setting the priorities for the loan management system was crucial. You really made sure everything was on track and met our requirements, which made the project a success.",
     author: "Vlademir Pagtakhan",
     role: "College Professor and Software Engineer",
+    image: "/testimonial/testing.JPG",
   },
   {
     text: "Can perform tasks with minimal supervision, punctual, shows initiative in performing tasks. Always willing to learn and quickly adapts to new challenges.",
     author: "Daniel Angelo Wagwag",
     role: "IT Staff (My IT Supervisor during Internship",
+    image: "/testimonial/testing.JPG",
   },
 ]);
 

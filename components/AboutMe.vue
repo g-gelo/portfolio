@@ -16,12 +16,18 @@
           <p
             class="text-md text-gray-600 pb-2 leading-relaxed max-w-xs sm:max-w-md md:max-w-2xl md:text-xl border-b-2"
           >
-            Hello! I'm <strong>Angelo Gabriel D. Evangelista</strong>, a
-            <strong>fresh graduate front-end developer</strong> based in the
-            Philippines. I love creating beautiful and functional designs
-            through coding. It's fun for me to make things look good and work
-            well on websites. I enjoy learning new things and making cool web
-            applications for everyone to use.
+            Hello! I'm
+            <strong class="font-semibold">Angelo Gabriel D. Evangelista</strong
+            >, a Web Designer and Front-End Developer based in the Philippines.
+            I love
+            <strong class="font-semibold"
+              >turning ideas into clean, responsive, and visually engaging
+              websites</strong
+            >
+            using Duda, WordPress, and modern web technologies. Creating designs
+            that feel good to use and look great across all devices is what
+            motivates me. I’m always learning, experimenting, and refining my
+            craft to build digital experiences that leave a lasting impression.
           </p>
           <h2 class="text-2xl font-medium text-[#4e2edfaf]">
             &lt; Contact Information /&gt
@@ -45,9 +51,9 @@
           <p
             class="text-md pb-3 text-center text-gray-600 leading-relaxed max-w-xs sm:max-w-md md:max-w-2xl md:text-xl border-b-2 items-center"
           >
-            I'm a recent graduate open to part-time roles and new opportunities.
-            Whether you have questions or just want to say hi, feel free to
-            reach out—I'm here and ready to connect!
+            I’m currently open to roles and opportunities where I can contribute
+            my web design and front-end expertise. Let’s connect and create
+            something impactful together!
           </p>
 
           <div class="card-actions justify-center">
